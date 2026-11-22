@@ -1,39 +1,31 @@
-# MEMO v7 — Sinfonia da Memória
+# MEMO v9 — Vinte fases e Desafio do Dia
 
-PWA mobile-first, Chrome-first, offline-first, sem bibliotecas externas.
+Jogo de memória PWA, mobile-first, Chrome-first e offline-first, em JavaScript puro. Nenhuma dependência externa.
 
-## Como publicar
+## Instalação no GitHub Pages
 
-Envie todos os arquivos desta pasta para a raiz de um repositório GitHub e habilite **Settings → Pages → Deploy from a branch → main / (root)**. Abra a URL do GitHub Pages em HTTPS. O service worker mantém os recursos estáticos em cache após o primeiro carregamento.
+Copie **todos** os arquivos desta pasta, incluindo `assets/`, para a raiz do repositório. Em Settings → Pages, publique a branch `main`, pasta `/ (root)`. Abra em HTTPS. Após a primeira visita online, o service worker permite jogar offline.
 
-## Jogabilidade
+## Campanha
 
-Dez fases sequenciais com emojis diferentes, pontuação por pares e combos, dicas, cronômetro, recordes e dez chefões. Cada vitória libera uma relíquia e uma medalha de bronze, prata, ouro ou diamante. As fases vencidas podem ser rejogadas pelo Hall da Memória; fases ainda não vencidas não podem ser escolhidas.
+São **20 fases sequenciais**, cada uma com tema próprio, pares de emojis, chefão, frase motivacional e relíquia. Não é possível pular fases. As fases 11 a 20 são: Bosque dos Sentidos, Oficina das Ideias, Museu do Tempo, Cozinha Criativa, Cidade Elétrica, Reino dos Enigmas, Safari Fantástico, Circuito Cósmico, Biblioteca Secreta e Trono das Lembranças. Cada fase tem entre 10 e 12 pares nessa segunda metade. O troféu supremo vem após vencer a fase 20.
 
-## Novidades v7
+## Nova inovação: Desafio do Dia
 
-- Mascote expressivo 🧠, que reage aos acertos e erros.
-- Cofre com dez relíquias; Hall com chefões, medalhas e opção de rejogar fases já vencidas.
-- Laboratório com estatísticas do jogo e recordes; não é avaliação clínica.
-- Modos Relâmpago (90 segundos) e Zen (sem cronômetro visível), desbloqueados após vencer a campanha.
-- Na fase musical, acertos acrescentam pequenas notas originais.
-- Cerimônia de chefão com relíquia, medalha, frase e efeitos sonoros.
-- Exportação e restauração de backup JSON no menu. **Restaurar substitui o progresso atual.**
+No menu, abra **📅 Desafio do Dia**. O tabuleiro é embaralhado de modo reproduzível a partir da data local do aparelho e usa a fase atualmente desbloqueada. O resultado diário fica registrado no navegador e pode ser melhorado repetindo o desafio. O modo diário **não desbloqueia novas fases nem concede relíquias de campanha**; os pontos obtidos entram no total geral. A data do aparelho determina o desafio; não há relógio de servidor nem ranking online.
 
-## Som e vibração
+## Pontuação e coleções
 
-A música e os efeitos são gerados pela Web Audio API; a vibração usa `navigator.vibrate` onde houver suporte. O navegador precisa de um gesto do usuário para liberar áudio. Use os controles no cabeçalho e no menu.
+Ganhe pontos por pares, combos, rapidez e precisão. O total geral aparece no painel. O Hall permite revisitar fases vencidas. O Cofre reúne 20 relíquias e o Laboratório mostra estatísticas de jogo. Medalhas variam de bronze a diamante. Cartas especiais surgem nas fases avançadas.
 
-## Armazenamento
+## Música, vibração e acessibilidade
 
-O progresso fica no localStorage do navegador. Faça backups regulares; limpar os dados do site pode apagar as conquistas.
+A trilha e os efeitos são sintetizados pela Web Audio API, sem arquivos externos. No Chrome, a vinheta do splash exige um toque para desbloquear o áudio. Vibrações dependem do suporte do dispositivo (`navigator.vibrate`). O menu permite ajustar volume e ativar/desativar vibração; o cabeçalho contém música, som, tema e tela cheia.
+
+## Dados, atualização e backup
+
+O progresso fica em `localStorage`. O MEMO v9 lê os dados anteriores, expande coleções e recordes para 20 fases e, se a décima fase já foi vencida, libera automaticamente a fase 11. Faça **Exportar conquistas** antes de atualizar e guarde o JSON em local seguro. **Restaurar conquistas** substitui os dados atuais; backups v7/v8 com dez fases continuam aceitos.
 
 ## Testes recomendados
 
-Verificar Chrome Android: áudio após toque, vibração quando suportada, atualização offline, backup/restauração, cerimônias, desbloqueio sequencial, responsividade sem rolagem na tela principal e uso dos modos especiais.
-
-## MEMO v8 — Vinheta e cartas especiais
-- No splash de três segundos, toque em **♫ Ativar vinheta sonora** para ouvir a abertura. O Chrome exige uma interação do usuário antes de permitir áudio; a vinheta não pode ser garantida automaticamente.
-- A partir da fase 7, alguns pares recebem uma marca dourada e bônus especiais: Espelho (+75), Gelo (+50) e Mistério (+100). Os pares continuam obedecendo às regras clássicas, sem alterar o número de cartas.
-- Os dez chefões agora têm animações de derrota visualmente distintas.
-- O cache offline foi atualizado para v8, preservando as chaves de progresso da v7.
+No Chrome Android: confirmar o início automático pelo toque na carta, pontuação, áudio após interação, vibração, responsividade sem rolagem na tela de jogo, transição da fase 10 para a 11, conclusão da 20, Desafio do Dia, backup/restauração e funcionamento offline. O suporte a tela cheia e vibração varia conforme o navegador e o dispositivo.
