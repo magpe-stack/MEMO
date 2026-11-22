@@ -1,16 +1,19 @@
-# MEMO v10 — Trinta fases e Calendário de Conquistas
+# MEMO v11 — 50 fases e Missões da Memória
 
-PWA mobile-first, Chrome-first, offline-first, em HTML/CSS/JavaScript nativos. Publicação: enviar os arquivos da pasta para a raiz do repositório e ativar GitHub Pages na branch main.
+PWA mobile-first, Chrome-first e offline-first. Publique os arquivos da pasta MEMO na raiz do repositório GitHub Pages.
 
 ## Novidades
 
-- Fases 21–30: Laboratório das Sombras, Circo dos Ecos, Vale dos Cristais, Estação dos Sonhos, Jardim dos Autômatos, Carnaval das Máscaras, Ilha das Miragens, Arquivo do Infinito, Templo dos Instantes e Fortaleza da Memória. Cada fase tem 12 pares, chefão próprio, frase e relíquia.
-- Novo troféu final após a fase 30; progressão sequencial, sem pular fases.
-- Calendário de Conquistas no menu: mostra os últimos 14 dias e distintivos por sequências de 3, 7 e 30 dias de Desafio do Dia. Os dias são calculados pelo relógio local do dispositivo. Não concede pontos extras nem pula fases.
-- Vinheta de splash ativada por padrão, sem botão no splash; pode ser desligada no menu. Navegadores como Chrome bloqueiam som automático antes da interação do usuário: nesse caso, a vinheta só pode tocar se houver gesto permitido enquanto o splash estiver visível.
+- Fases 31 a 50: vinte novos mundos, vinte chefões interceptadores de memória, novas coleções de emojis, frases motivacionais e relíquias.
+- A campanha permanece sequencial: cada fase só é liberada após a vitória anterior.
+- Troféu supremo transferido para a fase 50.
+- **Missões da Memória:** a cada semana (relógio local do aparelho), complete três partidas, encontre 36 pares e conclua o Desafio do Dia para ganhar um distintivo. As missões não dão pontos nem pulam fases.
+- Missões exportadas e restauradas com o backup JSON v11; backups anteriores continuam aceitos.
 
-## Preservação e uso
+## Funções preservadas
 
-Mantidos: temas, tela cheia, sons, trilha musical, vibração, pontuação geral, medalhas, relíquias, hall, laboratório, modos especiais, backup/restauração JSON, splash de três segundos e funcionamento offline após a primeira visita.
+Modo claro/escuro, tela cheia, pontuação geral, música, efeitos sonoros, vibrações, splash de três segundos, chefões, relíquias, medalhas, Hall, Laboratório, Desafio do Dia, calendário, modos Zen/Relâmpago e cache offline. O áudio automático no splash depende da política de reprodução do navegador.
 
-O progresso anterior permanece no localStorage; backups de 10 e 20 fases continuam aceitos. Faça backup antes de atualizar. Teste no Chrome Android, sobretudo o áudio do splash, a conclusão da fase 20 e a abertura da 21, a cerimônia final da 30 e o calendário diário.
+## Publicação e testes
+
+Substitua os arquivos do repositório pelo conteúdo da pasta `MEMO`. Antes, exporte um backup. Atualize a página após a publicação para instalar o novo service worker. Teste as missões, as fases 30→31 e 49→50 e o troféu final no Chrome Android.
