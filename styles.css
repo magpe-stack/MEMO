@@ -54,3 +54,6 @@ main{flex:1;min-height:0;display:flex;flex-direction:column;padding:clamp(6px,1.
 
 /* Missões semanais */
 .mission-list{display:grid;gap:10px;margin:18px 0;text-align:left}.mission{display:flex;gap:12px;align-items:center;padding:12px;background:var(--soft);border-radius:14px}.mission>span{font-size:27px}.mission>div{flex:1;min-width:0}.mission strong{font-size:13px}.mission small{display:block;color:var(--muted);font-size:11px;margin-top:3px}.mission-track{height:7px;background:var(--line);border-radius:10px;overflow:hidden;margin-top:8px}.mission-track i{display:block;height:100%;border-radius:10px;background:var(--accent)}
+
+/* Atlas dos Nove Reinos */
+.realm-list{display:grid;gap:9px;margin:14px 0;text-align:left}.realm{display:flex;gap:12px;align-items:center;padding:11px;border:1px solid var(--line);border-radius:14px;background:var(--soft)}.realm-icon{font-size:25px;min-width:32px}.realm-info{flex:1;min-width:0}.realm-info strong{display:block;font-size:13px}.realm-info small{display:block;font-size:11px;color:var(--muted);margin:3px 0 7px}.realm-locked{opacity:.55}
