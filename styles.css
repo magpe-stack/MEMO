@@ -29,3 +29,6 @@ main{flex:1;min-height:0;display:flex;flex-direction:column;padding:clamp(6px,1.
 @keyframes bossWobble{to{transform:translateY(-7px) rotate(5deg)}}
 @media(min-width:600px){main{padding:10px 18px 6px}.app{padding-bottom:0}.board{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(max-height:620px){.hero p,.eyebrow{display:none}.hero-row{margin:1px 0 4px}.hero{padding:6px 10px}.stats-row{margin-top:4px}.board-top{min-height:25px}.topbar{height:43px}.bottom-bar{height:49px}.nav-icon{height:26px}}
+
+/* MEMO v4: total permanente, 5 indicadores compactos e tela cheia */
+.stats-row{grid-template-columns:repeat(5,minmax(0,1fr));gap:1px}.stat span{font-size:clamp(6px,1.5vw,8px);letter-spacing:0}.stat strong{font-size:clamp(10px,2.65vw,16px);white-space:nowrap}.total-stat strong{color:var(--accent)}.top-actions{gap:4px}.top-actions .icon-btn{flex-shrink:0}.board{max-width:min(520px,100%)}.speed-record{font-weight:800!important;color:var(--accent)!important}.boss-character.defeated{filter:grayscale(1);transform:rotate(-22deg) scale(.7)}@media(max-width:370px){.brand{font-size:16px}.top-actions .icon-btn{height:31px;width:31px;font-size:17px}.stat strong{font-size:10px}}

@@ -23,3 +23,11 @@ O jogo guarda progresso e recordes em localStorage. O service worker mantém arq
 ## Layout
 
 A interface usa a altura visível (`100dvh`), painel compacto, tabuleiro de quatro colunas e barra inferior fixa na composição, sem rolagem da tela principal. Em telas muito pequenas, a altura das cartas é reduzida automaticamente. Janelas de informações podem rolar internamente.
+
+## Novidades da versão 4
+
+- Pontuação geral acumulada sempre visível no painel, além dos pontos da fase.
+- Botão de tela cheia ao lado do tema (dependente do suporte e permissões do navegador).
+- Efeitos sintetizados adicionais para botões, combos, impactos dos chefões, fanfarras e recordes de velocidade.
+- Recordes de tempo por fase armazenados localmente.
+- Nenhum arquivo de áudio externo é necessário.
