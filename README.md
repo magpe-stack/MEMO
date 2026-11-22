@@ -31,3 +31,9 @@ O progresso fica no localStorage do navegador. Faça backups regulares; limpar o
 ## Testes recomendados
 
 Verificar Chrome Android: áudio após toque, vibração quando suportada, atualização offline, backup/restauração, cerimônias, desbloqueio sequencial, responsividade sem rolagem na tela principal e uso dos modos especiais.
+
+## MEMO v8 — Vinheta e cartas especiais
+- No splash de três segundos, toque em **♫ Ativar vinheta sonora** para ouvir a abertura. O Chrome exige uma interação do usuário antes de permitir áudio; a vinheta não pode ser garantida automaticamente.
+- A partir da fase 7, alguns pares recebem uma marca dourada e bônus especiais: Espelho (+75), Gelo (+50) e Mistério (+100). Os pares continuam obedecendo às regras clássicas, sem alterar o número de cartas.
+- Os dez chefões agora têm animações de derrota visualmente distintas.
+- O cache offline foi atualizado para v8, preservando as chaves de progresso da v7.
