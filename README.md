@@ -42,3 +42,11 @@ A interface usa a altura visível (`100dvh`), painel compacto, tabuleiro de quat
 - Áudio sintetizado localmente pela Web Audio API, sem arquivos MP3 nem rede.
 - O Chrome exige um gesto do usuário antes de tocar áudio: a música começa quando a partida é iniciada.
 - A trilha é interrompida ao pausar, abrir diálogos ou colocar a aba em segundo plano.
+
+
+## MEMO v6 — Áudio e vibração
+- Trilha sonora sintetizada audível também na tela inicial após o primeiro toque, com controle independente de música e efeitos.
+- Volume ajustável no menu (40% a 250% do nível de referência), salvo no navegador.
+- Vibrações distintas para cartas, pares, combos, erros, recordes e vitórias, quando `navigator.vibrate` é suportado.
+- No Chrome Android, vibrações dependem de suporte do dispositivo, configurações do sistema e interação do usuário. Navegadores desktop e alguns aparelhos não vibram.
+- Áudio exige um toque inicial por política do navegador.
