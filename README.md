@@ -1,16 +1,15 @@
-# MEMO v12 — 90 fases e Atlas dos Nove Reinos
+# MEMO v13 — A Jornada dos Cem Mundos
 
-Jogo de memória PWA offline-first, mobile-first, em HTML/CSS/JavaScript nativos.
+PWA de memória mobile-first e offline-first com 100 fases progressivas, 100 chefões, relíquias, medalhas, Atlas dos Dez Reinos, desafios diários, missões semanais, música sintetizada e vibrações opcionais.
 
-## Novidades
+## Instalação no GitHub Pages
+Envie o conteúdo desta pasta para a raiz do repositório. Em **Settings → Pages**, publique a branch `main` a partir de `/ (root)`. Abra o site no Chrome e utilize **Instalar** quando disponível.
 
-- Fases 51–70: 20 Trituradores de Memórias inéditos.
-- Fases 71–90: 20 Monstrinhos das Memórias Esquecidas inéditos.
-- Cada fase tem nome de cenário, 12 pares de emojis, chefão, frase motivacional, cerimônia e relíquia.
-- Atlas dos Nove Reinos: mapa de progresso com nove territórios de dez fases, mostrando conquistas e bloqueios sem permitir saltar fases.
-- Troféu final na fase 90.
-- Mantidos os recordes, pontuação, medalhas, relíquias, missões semanais, áudio, vibrações, splash, backup JSON, modos especiais, tema claro/escuro, tela cheia e funcionamento offline.
+## Décimo reino
+As fases 91 a 100 apresentam os Torturadores de Memória, com atmosfera visual e sonora própria, 14 pares por fase, apenas uma dica e menor tempo de exibição após erros. A campanha mantém a progressão sequencial. O fim da jornada reserva uma experiência especial aos vencedores.
 
-## Publicação
+## Dados e segurança
+O progresso é armazenado localmente. Use **Exportar conquistas** para guardar um backup JSON antes de limpar os dados do navegador ou trocar de aparelho. Áudio automático no splash depende das permissões do Chrome; vibração depende do dispositivo. Não há bibliotecas externas.
 
-Copie o conteúdo da pasta `MEMO` para a raiz do repositório GitHub Pages. Faça backup do progresso antes de atualizar. O cache do service worker foi atualizado para v12. O áudio do splash está sujeito à política de reprodução automática do Chrome.
+## Testes recomendados
+Validar o layout em telas pequenas, o áudio no Chrome Android, o desbloqueio 90→91, a cerimônia final, o backup e o funcionamento offline após o primeiro carregamento.

@@ -57,3 +57,14 @@ main{flex:1;min-height:0;display:flex;flex-direction:column;padding:clamp(6px,1.
 
 /* Atlas dos Nove Reinos */
 .realm-list{display:grid;gap:9px;margin:14px 0;text-align:left}.realm{display:flex;gap:12px;align-items:center;padding:11px;border:1px solid var(--line);border-radius:14px;background:var(--soft)}.realm-icon{font-size:25px;min-width:32px}.realm-info{flex:1;min-width:0}.realm-info strong{display:block;font-size:13px}.realm-info small{display:block;font-size:11px;color:var(--muted);margin:3px 0 7px}.realm-locked{opacity:.55}
+
+/* v13: o décimo reino mantém o tabuleiro numa única tela */
+.torture-realm{--accent:#dc456a;--soft:#261827;--ink:#f8eaf0;--muted:#c9a6b6;--line:#69445b;--bg:#100d18;--card:#211624;color-scheme:dark}
+.torture-realm body{background:radial-gradient(ellipse at 50% 10%,#3c173e 0%,#100d18 65%);color:#f8eaf0}
+.torture-realm .hero,.torture-realm .board-wrap{filter:drop-shadow(0 0 10px #bc295633)}
+.torture-realm .card .back{background:linear-gradient(145deg,#522047,#1b112e);border-color:#a53c6b}
+.torture-realm .card .back:after{content:'⛓';color:#ef9bb6}
+.torture-realm .progress-track>div{background:linear-gradient(90deg,#d22e63,#f6aa56)}
+.secret-orb{font-size:64px;animation:secretFloat 3s ease-in-out infinite}.secret-stars{letter-spacing:12px;color:#f3c969;font-size:18px}.secret-line{font-size:17px;line-height:1.7}.modal-card textarea{width:100%;box-sizing:border-box;border:1px solid var(--line);border-radius:12px;padding:12px;font:inherit;background:var(--soft);color:var(--ink);resize:vertical}
+@keyframes secretFloat{50%{transform:translateY(-10px) scale(1.08)}}
+@media(prefers-reduced-motion:reduce){.secret-orb{animation:none}}
