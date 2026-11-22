@@ -31,3 +31,14 @@ A interface usa a altura visível (`100dvh`), painel compacto, tabuleiro de quat
 - Efeitos sintetizados adicionais para botões, combos, impactos dos chefões, fanfarras e recordes de velocidade.
 - Recordes de tempo por fase armazenados localmente.
 - Nenhum arquivo de áudio externo é necessário.
+
+
+## MEMO v5 — Jardim Sonoro
+
+- Trilha musical original generativa, com cinco escalas e motivos que alternam entre fases.
+- Botão ♫ no cabeçalho para desligar somente a música; 🔊 controla todos os sons.
+- Efeitos para cartas, menus, tema, tela cheia, pausa, retomada, dicas, combos e supercombos.
+- Sequências musicais especiais para chefões, impactos, derrota, recordes e troféu final.
+- Áudio sintetizado localmente pela Web Audio API, sem arquivos MP3 nem rede.
+- O Chrome exige um gesto do usuário antes de tocar áudio: a música começa quando a partida é iniciada.
+- A trilha é interrompida ao pausar, abrir diálogos ou colocar a aba em segundo plano.
