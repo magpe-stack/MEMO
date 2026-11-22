@@ -1,31 +1,16 @@
-# MEMO v9 — Vinte fases e Desafio do Dia
+# MEMO v10 — Trinta fases e Calendário de Conquistas
 
-Jogo de memória PWA, mobile-first, Chrome-first e offline-first, em JavaScript puro. Nenhuma dependência externa.
+PWA mobile-first, Chrome-first, offline-first, em HTML/CSS/JavaScript nativos. Publicação: enviar os arquivos da pasta para a raiz do repositório e ativar GitHub Pages na branch main.
 
-## Instalação no GitHub Pages
+## Novidades
 
-Copie **todos** os arquivos desta pasta, incluindo `assets/`, para a raiz do repositório. Em Settings → Pages, publique a branch `main`, pasta `/ (root)`. Abra em HTTPS. Após a primeira visita online, o service worker permite jogar offline.
+- Fases 21–30: Laboratório das Sombras, Circo dos Ecos, Vale dos Cristais, Estação dos Sonhos, Jardim dos Autômatos, Carnaval das Máscaras, Ilha das Miragens, Arquivo do Infinito, Templo dos Instantes e Fortaleza da Memória. Cada fase tem 12 pares, chefão próprio, frase e relíquia.
+- Novo troféu final após a fase 30; progressão sequencial, sem pular fases.
+- Calendário de Conquistas no menu: mostra os últimos 14 dias e distintivos por sequências de 3, 7 e 30 dias de Desafio do Dia. Os dias são calculados pelo relógio local do dispositivo. Não concede pontos extras nem pula fases.
+- Vinheta de splash ativada por padrão, sem botão no splash; pode ser desligada no menu. Navegadores como Chrome bloqueiam som automático antes da interação do usuário: nesse caso, a vinheta só pode tocar se houver gesto permitido enquanto o splash estiver visível.
 
-## Campanha
+## Preservação e uso
 
-São **20 fases sequenciais**, cada uma com tema próprio, pares de emojis, chefão, frase motivacional e relíquia. Não é possível pular fases. As fases 11 a 20 são: Bosque dos Sentidos, Oficina das Ideias, Museu do Tempo, Cozinha Criativa, Cidade Elétrica, Reino dos Enigmas, Safari Fantástico, Circuito Cósmico, Biblioteca Secreta e Trono das Lembranças. Cada fase tem entre 10 e 12 pares nessa segunda metade. O troféu supremo vem após vencer a fase 20.
+Mantidos: temas, tela cheia, sons, trilha musical, vibração, pontuação geral, medalhas, relíquias, hall, laboratório, modos especiais, backup/restauração JSON, splash de três segundos e funcionamento offline após a primeira visita.
 
-## Nova inovação: Desafio do Dia
-
-No menu, abra **📅 Desafio do Dia**. O tabuleiro é embaralhado de modo reproduzível a partir da data local do aparelho e usa a fase atualmente desbloqueada. O resultado diário fica registrado no navegador e pode ser melhorado repetindo o desafio. O modo diário **não desbloqueia novas fases nem concede relíquias de campanha**; os pontos obtidos entram no total geral. A data do aparelho determina o desafio; não há relógio de servidor nem ranking online.
-
-## Pontuação e coleções
-
-Ganhe pontos por pares, combos, rapidez e precisão. O total geral aparece no painel. O Hall permite revisitar fases vencidas. O Cofre reúne 20 relíquias e o Laboratório mostra estatísticas de jogo. Medalhas variam de bronze a diamante. Cartas especiais surgem nas fases avançadas.
-
-## Música, vibração e acessibilidade
-
-A trilha e os efeitos são sintetizados pela Web Audio API, sem arquivos externos. No Chrome, a vinheta do splash exige um toque para desbloquear o áudio. Vibrações dependem do suporte do dispositivo (`navigator.vibrate`). O menu permite ajustar volume e ativar/desativar vibração; o cabeçalho contém música, som, tema e tela cheia.
-
-## Dados, atualização e backup
-
-O progresso fica em `localStorage`. O MEMO v9 lê os dados anteriores, expande coleções e recordes para 20 fases e, se a décima fase já foi vencida, libera automaticamente a fase 11. Faça **Exportar conquistas** antes de atualizar e guarde o JSON em local seguro. **Restaurar conquistas** substitui os dados atuais; backups v7/v8 com dez fases continuam aceitos.
-
-## Testes recomendados
-
-No Chrome Android: confirmar o início automático pelo toque na carta, pontuação, áudio após interação, vibração, responsividade sem rolagem na tela de jogo, transição da fase 10 para a 11, conclusão da 20, Desafio do Dia, backup/restauração e funcionamento offline. O suporte a tela cheia e vibração varia conforme o navegador e o dispositivo.
+O progresso anterior permanece no localStorage; backups de 10 e 20 fases continuam aceitos. Faça backup antes de atualizar. Teste no Chrome Android, sobretudo o áudio do splash, a conclusão da fase 20 e a abertura da 21, a cerimônia final da 30 e o calendário diário.
