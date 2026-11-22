@@ -65,3 +65,7 @@ MEMO/
 ## Atualizações
 
 Ao publicar uma nova versão, atualize o identificador `CACHE` em `sw.js` para renovar os arquivos estáticos em dispositivos que já instalaram o aplicativo.
+
+
+### Correção de interação
+As cartas iniciam a partida no primeiro toque. A animação de virada utiliza elemento de bloco para funcionar no Chrome Android.
